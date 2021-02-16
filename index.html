@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html>
+
+	<title> statistical calculator  </title>
+	
+	<head>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	
+	<body>
+	
+	<h2 id="statcalcheader">Statistical Calculator </h2>
+	
+	<form  onSubmit="return performStatistics()" id="myformstatcalc">
+	
+		<p>Enter 5 to 20 numbers (ranging in value between 0 and 100). 
+		<br >Exactly one (1) space must seperate each number.<br><strong>Do not add a space before the first number or after the last number</strong></p>
+		<table>
+			<tr>
+				<td>
+					<textarea name="calculationstextarea" id="valuestextarea" rows="3" cols="60" required></textarea>
+					<br>
+					<input type="submit" value="Submit" id="submitCalculations">
+					<input type="Reset" value="Reset" id="resetCalculationsForm">
+				</td>
+			</tr>
+		</table>
+	<br>
+	<br>
+		<table>
+	
+				<tr>
+					<td>
+						<label for = "minField">Min:</label>
+					</td>
+					<td>
+						<input type="text" name="min" id="minField" value="" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "maxField">Max:</label>
+					</td>
+					<td>
+						<input type="text" name="max" id="maxField" value="" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "sumField">Sum:</label>
+					</td>
+					<td>
+						<input type="text" name="sum" id="sumField" value="" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "meanField">Mean:</label>
+					</td>
+					<td>
+						<input type="text" name="mean" id="meanField" value="" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "medianField">Median:</label>
+					</td>
+					<td>
+						<input type="text" name="median" id="medianField" value="" readonly>
+					</td>
+				</tr>
+				<tr>
+				<tr>
+					<td>
+						<label for = "varianceField">Variance:</label>
+					</td>
+					<td>
+						<input type="text" name="variance" id="varianceField" value="" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "StdDevField">Std Dev:</label>
+					</td>
+					<td>
+						<input type="text" name="std dev" id="StdDevField" value="" readonly>
+					</td>
+				</tr>
+		</table>
+	</form >
+	<br>
+</body>
+	<script src="script.js"> </script>
+	</html>
+
